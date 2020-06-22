@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'myLayout.dart';
 import 'myTab.dart';
+import 'myTabSimple.dart';
 
 class MyHomeApp extends StatelessWidget {
     @override
@@ -68,6 +69,15 @@ class _MyHomePageState extends State<MyHomePage> {
                             );
                         },
                         child: Text("Go Tab")
+                    ),
+                    RaisedButton(
+                        onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => TabLayoutDemo())
+                            );
+                        },
+                        child: Text("Go Tab Simple")
                     )
                 ],
                 ),
